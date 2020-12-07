@@ -1,5 +1,5 @@
 a {
-  color: #000;
+  
   text-decoration: none;
   }
 th {
@@ -98,5 +98,15 @@ body {
 #error_explanation {
   margin-left: 100px;
   width: 82%;
-  
+}
+
+.try {
+  color: blue;
+  background-color: red;
+}
+
+.sign-up-button {
+  padding: 0 0 10px 20px;
+  color: rgb(209, 12, 12)!important;
+  font-size: 1.1em;
 }
