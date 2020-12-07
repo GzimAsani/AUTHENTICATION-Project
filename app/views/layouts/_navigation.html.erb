@@ -1,0 +1,15 @@
+<nav class="navbar navbar-color navbar-expand-lg navbar-light bg-light">
+  <%= link_to 'WOG', root_path, class: 'navbar-brand bold', id: 'logo'%>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      
+      <%= link_to 'Articles', blogs_path, class: 'nav-link active text-white'%>
+      <a class="nav-link text-white" href="#">Features</a>
+      <a class="nav-link text-white" href="#">Pricing</a>
+      <a class="nav-link disabled text-white" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    </div>
+  </div>
+</nav>
