@@ -11,6 +11,15 @@
     </div>
   <% end %>
 
+  <div> 
+    <%= form.label :title %>
+    <%= form.text_field :title, placeholder: "Title of article" %>
+  </div>
+  <div> 
+    <%= form.label :descripion %>
+    <%= form.text_area :description, placeholder: "Description of article"%>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
