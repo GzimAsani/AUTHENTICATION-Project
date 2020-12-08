@@ -2,18 +2,24 @@
 <h2 class='text-center'>All articles</h2>
 <div class='container'>
   <% @blogs.each do |blog| %>
-  <div class='row justify-content-md-center'>
-  <div class='col-8 mt-4'>
+    <div class='row justify-content-md-center'>
+      <div class='col-8 mt-4'>
         <div class="card text-center shadow-lg mb-5 bg-white rounded">
           <div class="card-header font-italic">
-            created by Gzim Asani
+            <% if user_signed_in? %>
+           <p> created by <%= blog.user.username %>
+            <% else %>
+              <%= link_to 'Sign up', new_user_registration_path, class: 'text-white'%> to see the blogers 
+            <% end %>
           </div>
           <div class="card-body card-body-color">
             <h5 class="card-title"><%= link_to blog.title, blog_path(blog), class: 'text-light' %></h5>
             <p class="card-text"><%= truncate(blog.description, length: 50) %></p>           
             <%= link_to 'View', blog_path(blog), class: 'btn btn-success'%>
-            <%= link_to 'Edit', edit_blog_path(blog), class: 'btn btn-warning'%>
-            <%= link_to "Delete", blog_path(blog), class: "btn btn-danger", method: :delete, data: {confirm: "Are you sure?"} %>
+            <% if user_signed_in? && current_user.username == blog.user.username %>
+              <%= link_to 'Edit', edit_blog_path(blog), class: 'btn btn-warning'%>
+              <%= link_to "Delete", blog_path(blog), class: "btn btn-danger", method: :delete, data: {confirm: "Are you sure?"} %>
+            <% end %>
           </div>
           <div class="card-footer">
             <small> Created <%= time_ago_in_words(blog.created_at) %> ago,
@@ -26,5 +32,3 @@
   <% end %>
 </div>
 
-
-<%= link_to 'New Blog', new_blog_path %>
