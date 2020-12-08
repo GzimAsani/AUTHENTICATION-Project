@@ -2,11 +2,11 @@
 
 > This is my next rails project where the project was build with the backend which was neccessary in order to store the information from articles and users, also the authentication was very important part because an authenticated author could see who wrote each article. 
 
-![screenshot](./app/assets/images/screen1.PNG)
-![screenshot](./app/assets/images/screen2.PNG)
-![screenshot](./app/assets/images/screen3.PNG)
-![screenshot](./app/assets/images/screen4.PNG)
-![screenshot](./app/assets/images/screen5.PNG)
+![screenshot](./app/assets/images/screen1.png)
+![screenshot](./app/assets/images/screen2.png)
+![screenshot](./app/assets/images/screen3.png)
+![screenshot](./app/assets/images/screen4.png)
+![screenshot](./app/assets/images/screen5.png)
 
 ## Features
 
