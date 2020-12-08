@@ -21123,3 +21123,43 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 36ms (Views: 33.1ms | ActiveRecord: 0.2ms | Allocations: 5954)
 
 
+Started GET "/blogs/new" for ::1 at 2020-12-08 12:48:07 +0100
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 2.5ms | Allocations: 783)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 5.5ms | Allocations: 844)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.4ms | Allocations: 174)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 127ms (Views: 121.9ms | ActiveRecord: 0.2ms | Allocations: 32129)
+
+
+Started GET "/blogs/new" for ::1 at 2020-12-08 12:48:07 +0100
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 2.1ms | Allocations: 783)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 844)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.6ms | Allocations: 174)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 18ms (Views: 13.1ms | ActiveRecord: 0.2ms | Allocations: 7526)
+
+
+Started POST "/blogs" for ::1 at 2020-12-08 12:48:09 +0100
+Processing by BlogsController#create as HTML
+  Parameters: {"authenticity_token"=>"EFbTtW7d57t6JD3hXLcd88YjuLLOhx5GVWywHhIcFZ+0Vtx/7FZVvE+0abLMDxpRDyxFkLxOJ3Hu9Ao2VubtMg==", "blog"=>{"title"=>"", "description"=>""}, "commit"=>"Create Blog"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 6.4ms | Allocations: 1305)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1366)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.4ms | Allocations: 174)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 38ms (Views: 22.2ms | ActiveRecord: 0.3ms | Allocations: 9801)
+
+
