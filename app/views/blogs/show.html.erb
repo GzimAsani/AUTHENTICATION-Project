@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+<h2 class='text-center'><%= @blog.title %> </h2>
+<div class='container'>
+  <div class='row justify-content-md-center'>
+  <div class='col-8 mt-4'>
+        <div class="card text-center shadow-lg mb-5 bg-white rounded">
+          <div class="card-header font-italic">
+              <% if user_signed_in? %>
+                created by <%= current_user.username %>
+              <% else %>
+                <%= link_to 'Sign up', new_user_registration_path, class: 'text-white'%> to see the blogers 
+              <% end %>
+          </div>
+          <div class="card-body card-body-color">
+            <p class="card-text"><%= @blog.description %></p>
+            <% if user_signed_in? %>           
+              <%= link_to 'Edit', edit_blog_path(@blog), class: 'btn btn-warning'%>
+              <%= link_to "Delete", blog_path(@blog), class: "btn btn-danger", method: :delete, data: {confirm: "Are you sure?"} %>
+            <% end %>
+          </div>
+          <div class="card-footer">
+            <small> Created <%= time_ago_in_words(@blog.created_at) %> ago,
+            updated <%= time_ago_in_words(@blog.updated_at) %> ago,
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

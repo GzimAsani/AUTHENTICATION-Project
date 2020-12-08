@@ -1,0 +1,112 @@
+a {
+  text-decoration: none;
+}
+
+th {
+  padding-bottom: 5px;
+}
+
+td {
+  padding: 0 5px 7px;
+}
+
+#notice {
+  color: rgb(0, 255, 0);
+  font-size: 1.7em;
+  margin-top: -40px;
+}
+
+.field_with_errors {
+  padding: 2px;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid rgb(226, 219, 219);
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #ff0202;
+  color: rgb(241, 237, 237);
+  margin-left: 100px;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: rgb(250, 1, 1);
+  color: rgb(255, 253, 253);
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+label {
+  display: block;
+}
+
+body {
+  background-color: black;
+}
+
+.jumbotron {
+  background-color: rgb(72, 73, 75);
+  color: rgb(227, 231, 225);
+  background-image: url('blog2.jpeg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.navbar-color {
+  background-color: rgb(117, 109, 109) !important;
+}
+
+#logo {
+  letter-spacing: -0.3em;
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+.card-body-color {
+  background-color: rgb(158, 143, 143);
+}
+
+.card-header {
+  background-color: rgb(97, 90, 90);
+}
+
+.card-footer {
+  background-color: rgb(97, 90, 90);
+}
+
+.form-bg {
+  background-color: rgb(17, 17, 17);
+}
+
+.try {
+  color: blue;
+  background-color: red;
+}
+
+.sign-up-button {
+  padding: 0 0 10px 20px;
+  color: rgb(209, 12, 12) !important;
+  font-size: 1.1em;
+}
