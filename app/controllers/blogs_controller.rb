@@ -1,6 +1,7 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: %i[show edit update destroy]
   before_action :authenticate_user!, except: %i[index show]
+  before_action :signed_in_only!, only: [:new, :create]
 
   # GET /blogs
   # GET /blogs.json
