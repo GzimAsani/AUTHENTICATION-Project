@@ -14,7 +14,7 @@ class BlogsController < ApplicationController
 
   # GET /blogs/new
   def new
-    @blog = current_user.blogs.build
+    @blog = Blog.new
   end
 
   # GET /blogs/1/edit
@@ -27,7 +27,7 @@ class BlogsController < ApplicationController
 
     respond_to do |format|
       if @blog.save
-        format.html { redirect_to @blog, notice: 'Blog was successfully created.' }
+        format.html { redirect_to blogs_path, notice: 'Blog was successfully created.' }
         format.json { render :show, status: :created, location: @blog }
       else
         format.html { render :new }
